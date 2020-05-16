@@ -1,22 +1,6 @@
 console.log('My JS File');
 
-const xhr = new XMLHttpRequest();
-let title = "spiderman";
-let no = "1";
-xhr.open('GET', `https://jsonmock.hackerrank.com/api/movies/search/?Title=spiderman&page=1`, true);
-
-xhr.onload = function() {
-    if (this.status === 200) {
-        let articles = JSON.parse(this.responseText).articles;
-        console.log(articles);
-    } else {
-        console.log('Some Error Occured!');
-    }
-}
-xhr.send();
-//90bc4e90df5744bcb4424945a2d91597
-
-/*let newsAccordion = document.getElementById('newsAccordion');
+let newsAccordion = document.getElementById('newsAccordion');
 
 const xhr = new XMLHttpRequest();
 let country = 'in';
@@ -56,5 +40,3 @@ xhr.onload = function () {
     }
 }
 xhr.send();
-
-*/
